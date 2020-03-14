@@ -33,11 +33,11 @@ class Directory extends React.Component {
                     id: 4,
                     linkUrl: '/yarn'
                 }, {
-                    title: 'ROVING',
+                    title: 'FIBER',
                     imageUrl: 'https://i.imgur.com/3TlIaKx.jpg',
                     size: 'large',
                     id: 5,
-                    linkUrl: '/roving'
+                    linkUrl: '/fiber'
                 }, 
             ]
         }
