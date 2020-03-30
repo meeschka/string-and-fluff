@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-    {
+const SHOP_DATA = {
+    yarn: {
       id: 1,
       title: 'Yarn',
       routeName: 'yarn',
@@ -30,7 +30,7 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    fiber: {
       id: 2,
       title: 'Fiber',
       routeName: 'fiber',
@@ -61,7 +61,7 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    weaving: {
       id: 3,
       title: 'Weaving Yarn',
       routeName: 'weaving',
@@ -98,7 +98,7 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    accessories: {
       id: 4,
       title: 'Accessories',
       routeName: 'accessories',
@@ -135,7 +135,7 @@ const SHOP_DATA = [
         },
       ]
     },
-    {
+    sale: {
       id: 5,
       title: 'Sale',
       routeName: 'sale',
@@ -154,5 +154,5 @@ const SHOP_DATA = [
         }
       ]
     }
-  ]
+}
 export default SHOP_DATA
