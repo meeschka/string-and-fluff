@@ -4,9 +4,11 @@ import './collection-preview-styles.scss'
 
 import CollectionItem from '../collection-item/collection-item'
 
-const CollectionPreview = ({ title, items }) => (
+const CollectionPreview = ({ title, items, history, match, routeName }) => (
     <div className='collection-preview'>
-        <h1 className='preview-title'>{title.toUpperCase()}</h1>
+        <h1 className='preview-title' onClick={() => history.push(`${match.path}/${routeName}`)}>
+            {title.toUpperCase()}
+        </h1>
         <div className='preview-row'>
             {items
                 .filter((item, idx) => idx < 4)
