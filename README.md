@@ -11,4 +11,5 @@ This app was built using create react app. You can run it locally by forking the
 This app was built using React and redux. Firebase was used for user databases and to manage auth. The following libraries were also used:
 - Reselect for memoization of redux selectors
 - Redux-Persist for local storage of users' cart items
+-Redux Thunks allow asynchronous API calls to be called using actions
 - Stripe for credit-card payments
