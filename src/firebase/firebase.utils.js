@@ -36,6 +36,16 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     return userRef;
 }
 
+//mimics functionality that comes from having a non-firebase backend for promise based architecture for learning exercise
+export const getCurrentUser = () => {
+    return new Promise((resolve, reject) => {
+        const unsubscribe = auth.onAuthStateChanged(userAuth => {
+            unsubscribe()
+            resolve(userAuth)
+        }, reject)
+    })
+}
+
 firebase.initializeApp(config)
 
 export const auth = firebase.auth()
